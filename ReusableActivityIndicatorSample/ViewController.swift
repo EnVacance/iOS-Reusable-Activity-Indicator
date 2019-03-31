@@ -1,5 +1,6 @@
 
 import UIKit
+import ReusableActivityIndicator
 
 class ViewController: UIViewController {
 
@@ -10,7 +11,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Setting style globally
+        ReusableActivityIndicatorSettings.shared.style = .gray
     }
 }
 
@@ -20,11 +23,17 @@ class ViewController: UIViewController {
 extension ViewController {
     
     @IBAction func startButtonTap(_ sender: Any) {
-        print("Start")
+        wideRectangleView.activityIndicatorStart()
+        tallRectangleView.activityIndicatorStart()
+        
+        // Overring global style setting
+        squareView.activityIndicatorStart(style: .whiteLarge)
     }
     
     @IBAction func stopButtonTap(_ sender: Any) {
-        print("Stop")
+        wideRectangleView.activityIndicatorStop()
+        tallRectangleView.activityIndicatorStop()
+        squareView.activityIndicatorStop()
     }
     
 }
