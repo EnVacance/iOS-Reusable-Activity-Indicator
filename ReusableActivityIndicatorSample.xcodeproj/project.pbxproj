@@ -97,11 +97,9 @@
 		E369D1862250FAEB004AF775 /* ReusableActivityIndicatorSample */ = {
 			isa = PBXGroup;
 			children = (
-				E369D1872250FAEB004AF775 /* AppDelegate.swift */,
-				E369D1892250FAEB004AF775 /* ViewController.swift */,
+				E369D1B52250FBA9004AF775 /* Application */,
 				E369D18B2250FAEB004AF775 /* Main.storyboard */,
-				E369D18E2250FAEB004AF775 /* Assets.xcassets */,
-				E369D1902250FAEB004AF775 /* LaunchScreen.storyboard */,
+				E369D1892250FAEB004AF775 /* ViewController.swift */,
 				E369D1932250FAEB004AF775 /* Info.plist */,
 			);
 			path = ReusableActivityIndicatorSample;
@@ -123,6 +121,16 @@
 				E369D1A92250FAEB004AF775 /* Info.plist */,
 			);
 			path = ReusableActivityIndicatorSampleUITests;
+			sourceTree = "<group>";
+		};
+		E369D1B52250FBA9004AF775 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E369D1872250FAEB004AF775 /* AppDelegate.swift */,
+				E369D18E2250FAEB004AF775 /* Assets.xcassets */,
+				E369D1902250FAEB004AF775 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
