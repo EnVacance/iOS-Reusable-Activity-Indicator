@@ -26,7 +26,7 @@ extension ViewController {
         wideRectangleView.activityIndicatorStart()
         tallRectangleView.activityIndicatorStart()
         
-        // Overring global style setting
+        // Overriding global style setting
         squareView.activityIndicatorStart(style: .whiteLarge)
     }
     
