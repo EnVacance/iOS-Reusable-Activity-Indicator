@@ -14,6 +14,9 @@
 		E369D1922250FAEB004AF775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E369D1902250FAEB004AF775 /* LaunchScreen.storyboard */; };
 		E369D19D2250FAEB004AF775 /* ReusableActivityIndicatorSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E369D19C2250FAEB004AF775 /* ReusableActivityIndicatorSampleTests.swift */; };
 		E369D1A82250FAEB004AF775 /* ReusableActivityIndicatorSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E369D1A72250FAEB004AF775 /* ReusableActivityIndicatorSampleUITests.swift */; };
+		E369D1BF2250FC40004AF775 /* ReusableActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = E369D1BD2250FC40004AF775 /* ReusableActivityIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E369D1C22250FC40004AF775 /* ReusableActivityIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E369D1BB2250FC40004AF775 /* ReusableActivityIndicator.framework */; };
+		E369D1C32250FC40004AF775 /* ReusableActivityIndicator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E369D1BB2250FC40004AF775 /* ReusableActivityIndicator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +34,28 @@
 			remoteGlobalIDString = E369D1832250FAEB004AF775;
 			remoteInfo = ReusableActivityIndicatorSample;
 		};
+		E369D1C02250FC40004AF775 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E369D17C2250FAEB004AF775 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E369D1BA2250FC40004AF775;
+			remoteInfo = ReusableActivityIndicator;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E369D1C72250FC40004AF775 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E369D1C32250FC40004AF775 /* ReusableActivityIndicator.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E369D1842250FAEB004AF775 /* ReusableActivityIndicatorSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReusableActivityIndicatorSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +71,9 @@
 		E369D1A32250FAEB004AF775 /* ReusableActivityIndicatorSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReusableActivityIndicatorSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E369D1A72250FAEB004AF775 /* ReusableActivityIndicatorSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableActivityIndicatorSampleUITests.swift; sourceTree = "<group>"; };
 		E369D1A92250FAEB004AF775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E369D1BB2250FC40004AF775 /* ReusableActivityIndicator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReusableActivityIndicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E369D1BD2250FC40004AF775 /* ReusableActivityIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReusableActivityIndicator.h; sourceTree = "<group>"; };
+		E369D1BE2250FC40004AF775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E369D1C22250FC40004AF775 /* ReusableActivityIndicator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +99,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E369D1B82250FC40004AF775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +115,7 @@
 				E369D1862250FAEB004AF775 /* ReusableActivityIndicatorSample */,
 				E369D19B2250FAEB004AF775 /* ReusableActivityIndicatorSampleTests */,
 				E369D1A62250FAEB004AF775 /* ReusableActivityIndicatorSampleUITests */,
+				E369D1BC2250FC40004AF775 /* ReusableActivityIndicator */,
 				E369D1852250FAEB004AF775 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +126,7 @@
 				E369D1842250FAEB004AF775 /* ReusableActivityIndicatorSample.app */,
 				E369D1982250FAEB004AF775 /* ReusableActivityIndicatorSampleTests.xctest */,
 				E369D1A32250FAEB004AF775 /* ReusableActivityIndicatorSampleUITests.xctest */,
+				E369D1BB2250FC40004AF775 /* ReusableActivityIndicator.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,7 +170,27 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		E369D1BC2250FC40004AF775 /* ReusableActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				E369D1BD2250FC40004AF775 /* ReusableActivityIndicator.h */,
+				E369D1BE2250FC40004AF775 /* Info.plist */,
+			);
+			path = ReusableActivityIndicator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E369D1B62250FC40004AF775 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E369D1BF2250FC40004AF775 /* ReusableActivityIndicator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		E369D1832250FAEB004AF775 /* ReusableActivityIndicatorSample */ = {
@@ -143,10 +200,12 @@
 				E369D1802250FAEB004AF775 /* Sources */,
 				E369D1812250FAEB004AF775 /* Frameworks */,
 				E369D1822250FAEB004AF775 /* Resources */,
+				E369D1C72250FC40004AF775 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E369D1C12250FC40004AF775 /* PBXTargetDependency */,
 			);
 			name = ReusableActivityIndicatorSample;
 			productName = ReusableActivityIndicatorSample;
@@ -189,6 +248,24 @@
 			productReference = E369D1A32250FAEB004AF775 /* ReusableActivityIndicatorSampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E369D1BA2250FC40004AF775 /* ReusableActivityIndicator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E369D1C42250FC40004AF775 /* Build configuration list for PBXNativeTarget "ReusableActivityIndicator" */;
+			buildPhases = (
+				E369D1B62250FC40004AF775 /* Headers */,
+				E369D1B72250FC40004AF775 /* Sources */,
+				E369D1B82250FC40004AF775 /* Frameworks */,
+				E369D1B92250FC40004AF775 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReusableActivityIndicator;
+			productName = ReusableActivityIndicator;
+			productReference = E369D1BB2250FC40004AF775 /* ReusableActivityIndicator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,6 +286,9 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = E369D1832250FAEB004AF775;
 					};
+					E369D1BA2250FC40004AF775 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 				};
 			};
 			buildConfigurationList = E369D17F2250FAEB004AF775 /* Build configuration list for PBXProject "ReusableActivityIndicatorSample" */;
@@ -227,6 +307,7 @@
 				E369D1832250FAEB004AF775 /* ReusableActivityIndicatorSample */,
 				E369D1972250FAEB004AF775 /* ReusableActivityIndicatorSampleTests */,
 				E369D1A22250FAEB004AF775 /* ReusableActivityIndicatorSampleUITests */,
+				E369D1BA2250FC40004AF775 /* ReusableActivityIndicator */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +331,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E369D1A12250FAEB004AF775 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E369D1B92250FC40004AF775 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,6 +372,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E369D1B72250FC40004AF775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -296,6 +391,11 @@
 			isa = PBXTargetDependency;
 			target = E369D1832250FAEB004AF775 /* ReusableActivityIndicatorSample */;
 			targetProxy = E369D1A42250FAEB004AF775 /* PBXContainerItemProxy */;
+		};
+		E369D1C12250FC40004AF775 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E369D1BA2250FC40004AF775 /* ReusableActivityIndicator */;
+			targetProxy = E369D1C02250FC40004AF775 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -547,6 +647,60 @@
 			};
 			name = Release;
 		};
+		E369D1C52250FC40004AF775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ReusableActivityIndicator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EnVacance.ReusableActivityIndicator;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E369D1C62250FC40004AF775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ReusableActivityIndicator/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EnVacance.ReusableActivityIndicator;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,6 +736,15 @@
 			buildConfigurations = (
 				E369D1B32250FAEB004AF775 /* Debug */,
 				E369D1B42250FAEB004AF775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E369D1C42250FC40004AF775 /* Build configuration list for PBXNativeTarget "ReusableActivityIndicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E369D1C52250FC40004AF775 /* Debug */,
+				E369D1C62250FC40004AF775 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
