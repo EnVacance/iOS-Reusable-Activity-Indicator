@@ -1,0 +1,20 @@
+# OSX
+.DS_Store
+
+# Xcode
+build/
+xcuserdata
+*.xccheckout
+DerivedData
+*.ipa
+*.xcuserstate
+*.xcworkspace
+
+# Carthage
+Carthage
+
+# fastlane
+fastlane/report.xml
+
+# CocoaPods
+Pods/
