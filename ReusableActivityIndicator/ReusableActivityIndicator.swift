@@ -51,7 +51,16 @@ extension UIView {
         ai.style = style
         
         addSubview(ai)
-        ai.addAnchorsEdged(equalTo: self)
+        
+        // lenghtを１にしないと、TableView等でその部分がScroll不可になる
+        // length0でもActivityIndicatorは正しく表示される
+        let aiLength: CGFloat = 1
+        [
+            ai.widthAnchor.constraint(equalToConstant: aiLength),
+            ai.heightAnchor.constraint(equalToConstant: aiLength),
+            ai.centerYAnchor.constraint(equalTo: centerYAnchor),
+            ai.centerXAnchor.constraint(equalTo: centerXAnchor),
+        ].forEach { $0.isActive = true  }
         ai.startAnimating()
     }
     
